@@ -5,11 +5,14 @@
   "main": "web/scripts/app.js",
   "dependencies": {
     "consolidate": "^0.15.1",
-    "express": "^3.0.0-alpha4",
+    "express": "^3.11.0",
     "firebase": "^5.10.1",
     "path": "^0.12.7",
     "swig": "^1.4.2",
-    "travis": "^0.1.1"
+    "travis": "^0.1.1",
+    "uglify-js": ">=2.6.0",
+      "qs": ">=1.0.0",
+      "mime": ">=1.4.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
