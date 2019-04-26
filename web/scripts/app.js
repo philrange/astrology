@@ -1,4 +1,5 @@
 
+const functions = require("firebase-functions")
 var express = require('express');
 
 var cons = require('consolidate');
@@ -18,21 +19,12 @@ app.get('/', function(req, res) {
 //    res.send('Hello');
 });
 
+//const app = functions.https.onRequest(app)
+//
+//module.exports = {
+//  app
+//}
+
 var server = app.listen(3000, function() {
     
-});
-
-//const http = require('http');
-//
-//const hostname = '127.0.0.1';
-//const port = 3000;
-//
-//const server = http.createServer((req, res) => {
-//  res.statusCode = 200;
-//  res.setHeader('Content-Type', 'text/plain');
-//  res.render('index', {title: 'Home'});
-//});
-//
-//server.listen(port, hostname, () => {
-//  console.log(`Server running at http://${hostname}:${port}/`);
 //});
