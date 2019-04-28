@@ -20,7 +20,7 @@ app.set('views', path.join(__dirname, '../web/views'));
 app.set('view engine', 'html');
 
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
     res.render('index', 
                {title: 'Home'}
               );
