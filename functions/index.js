@@ -16,7 +16,7 @@ var app = express();
 
 // view engine setup
 app.engine('html', cons.swig)
-app.set('views', path.join(__dirname, '../web/views'));
+app.set('views', path.join(__dirname, '/../web/views'));
 app.set('view engine', 'html');
 
 
