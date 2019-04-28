@@ -18,7 +18,8 @@ var app = express();
 app.engine('html', cons.swig)
 console.log(__dirname);
 console.log(path.join(__dirname, '/../web/views'));
-app.set('views', path.join(__dirname, '/../web/views'));
+console.log(path.join(__dirname, 'web/views'));
+app.set('views', path.join(__dirname, 'web/views'));
 app.set('view engine', 'html');
 
 
