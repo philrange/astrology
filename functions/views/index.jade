@@ -2,16 +2,31 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
-
-  br  
-  a(class='waves-effect waves-light btn') button
+  div(class='container')
+    br  
+    a(class='waves-effect waves-light btn') button
   
-  for starsign in ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces']
-    div(class='starsign' title=starsign)
-      div #{starsign}
+    div(class='starsigns')
+     for starsign in ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces']
+      div(class='starsign' title=starsign)
+        div #{starsign}
         
-  script(src='js/astrology.js')
+        
+    div(class='row')
+     for starsign in ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces']
+      div(class='col s4 m3 l2 xl1')
+       div(class='card' title=starsign)
+         span(class='card-title blue-grey darken-1') #{starsign} 
+
+
+
+    
+
+        
+        
+        
+        
+    //script(src='js/astrology.js')
 
 
       
