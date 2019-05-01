@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  br  
+  a(class='waves-effect waves-light btn') button
+  
+  for starsign in ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces']
+    div(class='starsign' title=starsign)
+      div #{starsign}
+        
+  script(src='js/astrology.js')
+
+
+      
+
