@@ -1,9 +1,9 @@
 
 
 function setActivePage(pageId) {
-    $(".menuItem").removeClass("activePage")
+    $(".menuItem").removeClass("active")
     
-    $("#" + pageId).addClass("activePage")
+    $("#" + pageId).addClass("active")
     
     console.log("Setting active page to " + pageId)
 }

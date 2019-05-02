@@ -3,7 +3,7 @@ extends layout
 block content
   h1= title
   
-  include horoscopes.jade
+  include starsigns.jade
   
   a(href='birthchart') link
   
@@ -17,11 +17,7 @@ block content
         div #{starsign}
         
         
-    div(class='row')
-     for starsign in ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces']
-      div(class='col s4 m3 l2 xl1')
-       div(class='card' title=starsign)
-         span(class='card-title blue-grey darken-1') #{starsign} 
+
 
 
 

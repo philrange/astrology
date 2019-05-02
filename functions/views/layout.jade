@@ -10,15 +10,24 @@ html
     meta( name='viewport', content='width=device-width, initial-scale=1' )
   body
   
-    div(class='menuItem' id='abc') abc
-    div(class='menuItem' id='birthchart') birthchart
+    //header
+    nav
+     div(class='nav-wrapper deep-purple darken-4')
+      a(href='#' class='brand-logo') Astrology Readings
+      ul(class='right hide-on-med-and-down')
+       li(class='menuItem' id='abc') abc
+        li(class='menuItem' id='birthchart') birthchart
+    
+    //end header
+    
+    //javascript
     script(src='js/materialize.js')
     script(src='js/visual.js' type='text/javascript')
     script setActivePage('#{activePage}')
 
-    div fgdfgfdg
-
+    //content to be replaced by child template files
     block content
+      
       
 
 
