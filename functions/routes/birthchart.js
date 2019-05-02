@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
     
     var result = astrology.getBirthChart()
 
-  res.render('birthchart', { title: 'Home Page', abc: result[0] + ' ' + result[1] + ' ' + result[2] + ' ' + result[3] + ' ' + result[4] });
+  res.render('birthchart', { title: 'Home Page', abc: result[0] + ' ' + result[1] + ' ' + result[2] + ' ' + result[3] + ' ' + result[4], activePage: 'birthchart' });
 });
 
 module.exports = router;

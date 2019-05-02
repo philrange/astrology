@@ -2,6 +2,11 @@ extends layout
 
 block content
   h1= title
+  
+  include horoscopes.jade
+  
+  a(href='birthchart') link
+  
   div(class='container')
     br  
     a(class='waves-effect waves-light btn') button
