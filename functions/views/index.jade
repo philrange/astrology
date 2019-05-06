@@ -1,11 +1,10 @@
 extends layout
 
 block content
-  h1= title
+   
+  include starsign-cards.jade
   
-  include starsigns.jade
-  
-  a(href='birthchart') link
+
   
   div(class='container')
     br  
@@ -16,6 +15,7 @@ block content
       div(class='starsign' title=starsign)
         div #{starsign}
         
+    a(href='birthchart') link
         
 
 

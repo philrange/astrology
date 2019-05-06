@@ -9,13 +9,31 @@ nav li {
     margin-right: 2em;
 }
 
+nav .brand-logo, nav ul li, nav ul li a {
+    color: #fef9e7 !important;
+/*    color: red !important;*/
+}
+
 body {
     background: #fef9e7;
+}
+
+
+.flower-background {
+    width: 100%;
+    height: 200px;
+    background: rgb(21, 2, 24);
+    text-align: right;
+}
+
+.flower-background-image {
+    height: 100%;
 }
 
 .starsign-container {
     width: 60%;
     max-width: 280px;
+    padding-top: 10px;
     margin: auto;
 }
 

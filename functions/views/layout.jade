@@ -4,6 +4,7 @@ html
     title= title
     link(rel='stylesheet', href='/css/style.css')
     link(rel='stylesheet', href='/css/materialize.css')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
     script(src='js/jquery.js')
       
 
@@ -11,13 +12,32 @@ html
   body
   
     //header
+    ul(id='starsign-dropdown' class='dropdown-content deep-purple darken-4')
+     li
+      a(href='a.html') a
+     li
+      a(href='b.html') b
+     li
+      a(href='c.html') c
     nav
      div(class='nav-wrapper deep-purple darken-4')
-      a(href='#' class='brand-logo') Astrology Readings
+      a(href='#' class='brand-logo') Astrology Readings 
       ul(class='right hide-on-med-and-down')
-       li(class='menuItem' id='abc') abc
-        li(class='menuItem' id='birthchart') birthchart
-    
+       li(class='menuItem' id='horoscope') 
+        a(href='#!' class='dropdown-trigger' data-target='starsign-dropdown') horoscope
+         i(class='material-icons right') arrow_drop_down
+       li(class='menuItem' id='birthchart') free birth chart reading
+       li(class='divider')
+       li(class='menuItem') INFO:
+       li(class='divider')
+       li(class='menuItem' id='birthchart') free birth chart reading
+       li(class='menuItem' id='starsigns') starsigns
+       li(class='menuItem' id='planets') planets
+       li(class='menuItem' id='houses') houses
+
+    div(class='flower-background')
+     img(class='flower-background-image' src='/images/flower_background.jpg')
+
     //end header
     
     //javascript
