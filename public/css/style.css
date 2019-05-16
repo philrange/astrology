@@ -1,12 +1,12 @@
 
 
-nav a {
+nav .brand-logo {
     margin-left: 20px;
 }
 
 nav li {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 nav .brand-logo, nav ul li, nav ul li a {
@@ -21,13 +21,15 @@ body {
 
 .flower-background {
     width: 100%;
-    height: 200px;
+    height: 20px;
     background: rgb(21, 2, 24);
     text-align: right;
+    
 }
 
 .flower-background-image {
     height: 100%;
+/*    display: none;*/
 }
 
 .starsign-container {
@@ -42,7 +44,17 @@ body {
     width: 60%;
     max-width: 400px;
   }
-    
+        
+  .flower-background {
+    height: 200px;
+  }
+
+  .flower-background-image {
+    height: 100%;
+/*    display: block;*/
+  }
+
+
 }
 
 @media only screen and (min-width: 993px) {
@@ -65,6 +77,14 @@ body {
     width: 100%;
 }
 
+.card a:link, a:visited, a:active   {
+    color: black;
+}
+
+.card a:hover {
+    color: #311b92;
+}
+
 .card:after {
     content: "";
     display: block;
@@ -80,6 +100,7 @@ body {
     bottom: 0;
     right: 0;
     padding: 0px !important;
+    margin-top: 2px;
 }
 
 .card-image {
