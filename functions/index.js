@@ -17,6 +17,7 @@ var stylus = require('stylus');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var birthChartRouter = require('./routes/birthchart');
+var housesRouter = require('./routes/houses');
 const astronomia = require('astronomia')
 
 
@@ -36,6 +37,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/birthchart', birthChartRouter);
+app.use('/houses', housesRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

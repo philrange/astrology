@@ -1,7 +1,12 @@
 div(class='starsign-container')
     div(class='row')
      for starsign in ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo', 'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces']
+      - var starsignLowerCase = starsign.toLowerCase();
       div(class='col s4 m3 l2 xl1')
        div(class='card yellow lighten-4' title=starsign)
-        div(class='card-content')
-         span(class='card-title') #{starsign} 
+        div(class='card-square')
+         div(class='card-image')
+          img(src='/images/starsigns/#{starsignLowerCase}.svg' class='starsign-image')
+         div(class='card-content')
+          span(class='card-title') #{starsign} 
+         
